@@ -12,11 +12,11 @@ $purple:            #493252;
 $red:               #E25440;
 $slate:             #3D4260;
 
-$primary-color:     $red;
+$primary-color:     $green;
 $secondary-color:   #5BA4E5;
 
-$link-color:        $primary-color;
-$hover-color:       darken($link-color, 15%);
+$link-color:          lighten($primary-color, 10%);
+$hover-color:       darken($link-color, 25%);
 
 $sans-font:         'Raleway', sans-serif;
 $serif-font:        'Roboto Slab', serif;
