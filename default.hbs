@@ -28,6 +28,7 @@
 
     {{! Styles and Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/ouija.css"}}" />
 
     {{! Ghost Magic }}
     {{ghost_head}}
@@ -67,5 +68,15 @@
       ga('send', 'pageview');
 
     </script>
+    {{!-- Comments Ouija --}}
+    {{#with post}}
+    <script>
+      window.ouija_connect_url = 'https://goinstant.net/4a5456f54ce9/ouija';
+      window.ouija_identifier = {{id}};
+      window.ouija_article_content = 'section.post';
+    </script>
+    <script src="https://cdn.goinstant.net/v1/platform.min.js"></script>
+    <script src="{{asset "js/ouija.js"}}"></script>
+    {{/with}}
 </body>
 </html>
