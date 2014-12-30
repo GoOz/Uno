@@ -6,6 +6,11 @@
 # for developers that need it
 assets/scss/bourbon/*
 
-# ignore the sass-cache/
+# ignore the sass-cache & maps/
 .sass-cache/*
 **/.sass-cache/*
+*.map
+
+# config files
+.ruby-version
+./uno
